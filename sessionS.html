@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <label> Enter you Name</label>
+    <form>
+      <input type="text" id="Name" onchange="print()" />
+    </form>
+
+    <script>
+      //   window.localStorage.setItem("city", "amman");
+
+      //   window.sessionStorage.setItem("city", "aqaba");
+
+      //   ex
+      function print() {
+        var name = document.getElementById("Name");
+        window.sessionStorage.setItem("input", name.value);
+        console.log(name.value);
+        sessionStorage.removeItem("input");
+      }
+    </script>
+  </body>
+</html>

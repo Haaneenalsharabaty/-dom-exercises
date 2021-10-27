@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="e4.css">
+</head>
+<body>
+    <SELECT id="font" NAME="font" >
+        <option value="Open Sans">select font family</option>
+        <OPTION VALUE="Arial">Arial</OPTION>
+        <OPTION VALUE="Times New Roman">Times New Roman</OPTION>
+    </SELECT>
+    <SELECT id="size" NAME="size" >
+        <OPTION VALUE="12px">12</OPTION>
+        <OPTION VALUE="18px">18</OPTION>
+    </SELECT>
+    <input type="checkbox" id="bold" name="style" value="Bold">Bold
+    <input type="checkbox" id="italic" value="italic">italic
+    <input type="checkbox"id="underline" value="underline">underline
+    
+    <p id="text">the quick brown fox jumps over the lazy dog</p>
+
+
+
+
+ <script>
+
+let ffamily=document.getElementById("font");
+let fsize=document.getElementById("size");
+let p1=document.getElementById("text");
+let bold=document.getElementById("bold");
+let Uline=document.getElementById("underline");
+let it=document.getElementById("italic");
+fsize.addEventListener('change',function fontsize() {
+    p1.style.fontSize=fsize.value;
+
+    
+})
+
+ffamily.addEventListener('change',function familyfont() {
+    
+p1.style.fontFamily=ffamily.value;
+   
+       console.log("ha") ;
+   
+});
+  
+    
+
+    
+
+
+
+bold.addEventListener("change",function fweight() 
+{
+   if(bold.checked){
+        p1.style.fontWeight="bold";}
+        else
+        {p1.style.fontWeight="normal";}
+        
+  
+    
+    
+});
+
+it.addEventListener("change",function fitlic() 
+{
+   if(it.checked){
+        p1.style.fontStyle = "italic";}
+        else
+        {p1.style.fontStyle="normal";}
+        
+  
+    
+    
+});
+Uline.addEventListener("change",function fuline() 
+{
+   if(Uline.checked){
+        p1.style.textDecoration="underline";
+        console.log("hh");}
+        else
+        {p1.style.textDecoration="normal";}
+        
+  
+    
+    
+});
+
+
+
+</script>
+</body>
+</html>

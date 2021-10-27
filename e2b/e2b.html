@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eb2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div" onclick="changecolor()"></div>
+    <script>
+var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+document.getElementById("div").style.backgroundColor = randomColor;
+let  click1=0;
+function changecolor() {
+
+    var colorList = ['red','green','blue','pink'];
+
+
+    for (let i= 0; i<colorList.length; i++) {
+        
+        
+        document.getElementById("div").style.backgroundColor = colorList[click1];
+        
+      if (click1==colorList.length) {
+          click1=0;
+          
+      }
+            
+        }
+        click1++;
+       
+    }
+   
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+p{
+    background-color: yellow;
+    width: 25%;
+    height: 50%;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    border: black solid;
+    font-family:'Times New Roman', Times, serif;
+    padding: 1em;
+}

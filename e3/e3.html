@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="e3.css">
+</head>
+<body>
+    <SELECT id="city" NAME="city"  onChange="setImage()">
+        <OPTION VALUE="1">select</OPTION>
+        <OPTION VALUE="Flag_of_Palestine.svg.png">palestine</OPTION>
+        <OPTION VALUE="1200px-Flag_of_Jordan.svg.png">Jordan</OPTION>
+        <OPTION VALUE="2560px-Flag_of_Egypt.svg.png">Egypt</OPTION>
+      </SELECT>
+    <div>
+      <IMG id="image" SRC = "no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg" HEIGHT=100 WIDTH=200>
+    </div>
+
+
+<script>
+
+    function setImage() {
+        let img= document.getElementById("image");
+        let index=document.getElementById("city");
+        img.src=index.value;
+        
+    }
+   
+</script>
+</body>
+</html>

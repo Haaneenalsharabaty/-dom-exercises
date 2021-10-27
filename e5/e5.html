@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>password (min 6 characters)</td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              onkeyup="checkPass()"
+            />
+          </td>
+          <td>
+            <div id="error"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Repeat you password</td>
+          <td>
+            <input
+              type="password"
+              id="password2"
+              name="password2"
+              placeholder="Repeat you password"
+              onkeyup="checkPass()"
+            />
+          </td>
+          <td>
+            <div id="error2"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="submit" id="submit" value="submit" name="submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      let button = document.getElementById("submit");
+      button.style.visibility = "hidden";
+      function checkPass() {
+        let pas1 = document.getElementById("password");
+        let pas2 = document.getElementById("password2");
+        let errorMsg = document.getElementById("error");
+        let errorMsg2 = document.getElementById("error2");
+
+        if (pas1.value.length >= 6) {
+          errorMsg.innerHTML = "password is vaild";
+          errorMsg.style.color = "green";
+
+          if (pas1.value == pas2.value) {
+            errorMsg2.innerHTML = "passwords is matching";
+            button.style.visibility = "visible";
+            errorMsg2.style.color = "green";
+            console.log("g");
+          } else {
+            errorMsg2.innerHTML = "passwords is not match";
+            errorMsg2.style.color = "red";
+          }
+        } else {
+          errorMsg.innerHTML = "password is too short";
+          errorMsg.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="e7a.css"
+</head>
+<body>
+    <form id="addSong">
+<input  type="text" id="text" placeholder="Song Name" required>
+<button id="btn" value="submit" onclick="Add()">Add song</button>
+
+
+    </form>
+    <div>
+        <p id="song1"></p>
+        <br>
+        <p id="song2"></p>
+        <br>
+        <p id="song3"></p>
+    </div>
+    <button id="btn2" value="remove" style="display: none;" onclick="remove()">Remove Song</button>
+
+
+<script>
+let songName=document.getElementById("text");
+let btn1=document.getElementById("btn");
+let firstSong=document.getElementById("song1");
+let secondSong=document.getElementById("song2");
+let thirdSong=document.getElementById("song3");
+let btn2=document.getElementById("btn2");
+function add() {
+    if (songName.value1!="") {
+        let newchild=document.createElement("div");
+        playList.appendChild(newchild);
+        newchild.innerHTML=songName.value;
+        songName.value="";
+        newchild.style.border="1px solid black";
+        newchild.style.borderRadius="5px";
+        newchild.style.width="70%";
+        newchild.style.fontWeight="bold";
+        newchild.style.background="#F4F4F4";
+        newchild.style.padding="1%";
+        
+    }
+    
+}
+
+
+
+</script>
+</body>
+</html>

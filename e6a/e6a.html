@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  style="border: 1px black solid;  width: 50%;"> 
+    <h1 style="  background-color:gainsboro; " >what is lorem ipsum?</h1>
+    <p id="pargraph" style="display: none; padding: 1em; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo nostrum eum nulla aspernatur deleniti odio non eos culpa architecto obcaecati dolore maxime labore dolor similique, atque maiores velit.</p>
+    <span id="show" style="text-decoration: underline;
+    cursor: pointer;" onclick="showmore()">show</span>
+    </div>
+
+    <div  style="border: 1px black solid; width: 50%;"> 
+        <h1 style="  background-color:gainsboro;">why do use it?</h1>
+        <p id="pargraph2" style=" padding: 1em; text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, consequatur? Non natus, fuga ad sequi aspernatur est nemo earum harum officia aliquam rerum perspiciatis voluptatem animi ipsam omnis nobis libero cupiditate debitis quod placeat voluptatum expedita ut aliquid. Cumque expedita aliquam obcaecati ab perspiciatis omnis nostrum nulla inventore exercitationem sit molestias voluptatum fugiat, earum sapiente assumenda corporis nihil id voluptates. Modi sit hic alias? Obcaecati dignissimos, illo officia magni eos provident itaque nisi labore, quam ratione voluptates nobis ducimus molestiae cumque deleniti. Delectus sapiente, blanditiis debitis repellat harum fuga qui ex odit ullam possimus labore, quaerat ducimus provident optio temporibus vitae sunt repudiandae porro quo unde rerum aperiam. Tenetur in molestias saepe dicta ea. Assumenda consequuntur nesciunt quaerat soluta consequatur doloremque tempore minima itaque porro laboriosam omnis, praesentium ipsa quia ut inventore animi esse cumque quo ducimus veniam quas est recusandae, officia sapiente. Molestias doloribus eius dignissimos fugit accusantium culpa laudantium obcaecati quia. Dolor quos, labore impedit expedita doloribus enim adipisci eos. Ipsa architecto tempora molestias officia fuga vel tempore impedit quaerat eveniet, repellendus inventore hic, voluptatum tenetur! Quo reprehenderit, ad praesentium obcaecati accusantium perferendis quaerat vero nostrum earum architecto natus at. Voluptatibus beatae, cumque cum repellat necessitatibus consectetur explicabo!</p>
+        <span id="show2" style="text-decoration: underline;
+        cursor: pointer;" onclick="showmore2()">show</span>
+        </div>
+    <div  style="border: 1px black solid; width: 50%;"> 
+            <h1 style="  background-color:gainsboro;">why do use it?</h1>
+            <p id="pargraph3" style="display: none;  padding: 1em; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo nostrum eum nulla aspernatur deleniti odio non eos culpa architecto obcaecati dolore maxime labore dolor similique, atque maiores velit.</p>
+            <span id="show3" style="text-decoration: underline;
+            cursor: pointer;" onclick="showmore3()">show</span>
+     </div>
+
+
+
+
+
+
+<script>
+    let p1=document.getElementById("pargraph");
+    let show1=document.getElementById("show");
+    let p2=document.getElementById("pargraph2");
+    let show2=document.getElementById("show2");
+    let p3=document.getElementById("pargraph3");
+    let show3=document.getElementById("show3");
+    function showmore() {
+
+        
+  
+  if (p1.style.display === "none") {
+    p1.style.display = "block";
+    show1.innerHTML="Hide"
+  } else {
+    p1.style.display = "none";
+    show1.innerHTML="Show"
+  }
+
+        
+    };
+
+    function showmore2() {
+
+        
+  
+if (p2.style.display === "none") {
+  p2.style.display = "block";
+  show2.innerHTML="Hide"
+} else {
+  p2.style.display = "none";
+  show2.innerHTML="Show"
+}
+
+      
+  };
+  function showmore3() {
+
+        
+  
+if (p3.style.display === "none") {
+  p3.style.display = "block";
+  show3.innerHTML="Hide"
+} else {
+  p3.style.display = "none";
+  show3.innerHTML="Show"
+}
+
+      
+  };
+</script>
+</body>
+
+</html>
